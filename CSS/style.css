@@ -140,7 +140,7 @@ tr p {
 
 @media screen and (max-width: 400px) {
     main {
-    margin: 1rem auto;
+    margin: 0 auto;
     }
     .Intro h1 {
         font-size: 1.5rem;
