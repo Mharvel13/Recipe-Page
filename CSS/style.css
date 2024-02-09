@@ -129,12 +129,6 @@ tr p {
     color: var(--DarkRaspberry);
 }
 
-@media screen and (max-width: 400px) {
-    .Intro h1 {
-        font-size: 1.5rem;
-    }
-}
-
 .attribution {
     font-size: 15px;
     text-align: center;
@@ -142,3 +136,14 @@ tr p {
 .attribution a {
     color: var(--Nutmeg);
 }
+
+
+@media screen and (max-width: 400px) {
+    main {
+    margin: 1rem auto;
+    }
+    .Intro h1 {
+        font-size: 1.5rem;
+    }
+}
+
