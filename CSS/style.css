@@ -1,0 +1,144 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+/* COLORS */
+:root {
+    /* Primary */
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+
+    /* Nuetral */
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+}
+
+body {
+    background-color: var(--Eggshell);
+    font-family: Outfit, serif;
+}
+
+/* GENERAL STYLES */
+
+p {
+    font-size: 17px;
+    color: var(--WengeBrown);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+span {
+    color: var(--DarkCharcoal);
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Young Serif", serif;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--Nutmeg);
+}
+
+ul li::marker {
+    color: var(--DarkRaspberry);
+}
+ol li::marker {
+    color: var(--DarkRaspberry);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+header img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+main {
+    background-color: var(--White);
+    max-width: 700px;
+    margin: 8rem auto;
+    padding: 3rem;
+    border-radius: 1.5em;
+}
+
+/* Specific Styles */
+
+
+.Intro h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: var(--DarkCharcoal);
+}
+
+.Preparation {
+    background-color: var(--RoseWhite);
+    padding: 1em;
+    border-radius: 1.5rem;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.Preparation h3 {
+    color: var(--DarkRaspberry);
+}
+
+.Ingredients,
+.Instructions {
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--LightGrey);
+}
+.Ingredients h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.Ingredients ul li p,
+.Instructions ol li p {
+    margin-left: 10px;
+}
+
+table {
+    padding: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid var(--LightGrey);
+}
+
+tr:nth-last-child(1) {
+    border-bottom: none;
+}
+
+tr p {
+    margin-left: 2rem;
+}
+
+.value {
+    color: var(--DarkRaspberry);
+}
+
+@media screen and (max-width: 400px) {
+    .Intro h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.attribution {
+    font-size: 15px;
+    text-align: center;
+}
+.attribution a {
+    color: var(--Nutmeg);
+}
